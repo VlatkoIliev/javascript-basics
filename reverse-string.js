@@ -7,4 +7,20 @@ function reverseStr(str) {
   return newStr;
 }
 
-console.log(reverseStr('str'));
+//console.log(reverseStr('str'));
+
+// istata funkcija so push i unshift
+function reverseWithPop(str) {
+  let arr = Array.from(str);
+  let elem;
+  let newStr = '';
+  for (let i = 0; i < str.length; i++) {
+    elem = arr.pop();
+    newStr = newStr + elem;
+  }
+  return newStr;
+}
+
+// console.log(popAndShift('Vlatko'));
+
+console.log(reverseWithPop('vlatko'));
